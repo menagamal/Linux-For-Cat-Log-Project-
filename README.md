@@ -22,13 +22,15 @@
 
 ## Server Configuration 
 - setup the server on Google Compute Engine 
-- Download And Install Putty  and get the private key from it 
 - Add new User name called grader using "$ adduser grader" command 
 - add sudo privileges to the new user grader  using "$ sudo visusdo" command 
 - add the following "grader ALL=(ALL:ALL) ALL" under "root ALL=(ALL:ALL) ALL "  
 - back to the user grader 
 - create .ssh file to grader 
 - change ssh port to 2200
+- clone the project from the github repo 
+- setup configurations for apache 
+- restart apache server 
 
 ## Firewall Configuration 
 - Enter Command "$ sudo ufw allow 2200/tcp"
@@ -39,3 +41,4 @@
 - [changing ssh port](http://ubuntuforums.org/showthread.php?t=1591681)
 - [flask deployment](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
 - [linux server configurations](https://discussions.udacity.com/c/nd004-p7-linux-based-server-configuration)
+
